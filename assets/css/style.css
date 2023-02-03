@@ -52,6 +52,20 @@ a {
     background-color: var(--secondary-color);
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.word-break-all {
+    word-break: break-all;
+}
 
 /* === HEADER === */
 .header {
@@ -130,6 +144,7 @@ a {
 }
 
 .hero .media-block .image {
+    display: block;
     width: 470px;
     height: 685px;
     object-fit: cover;
@@ -266,4 +281,211 @@ a {
     align-items: center;
 }
 
+
+/* === COURSES === */
+.courses {
+    padding: 200px 0;
+}
+
+.courses-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-top .info {
+    max-width: 458px;
+}
+.courses-top .info .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+    margin-bottom: 16px;
+}
+
+.courses-top .info .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+}
+
+.courses-top .control {
+    display: flex;
+    gap: 18px;
+}
+.courses-top .control .control-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.courses-top .control .control-btn:hover {
+    opacity: 0.9;
+}
+
+.courses-top .control .control-btn-left {
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+}
+
+.courses-top .control .control-btn-right {
+    background: var(--secondary-color);
+    border: none;
+}
+
+
+.courses-bottom {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.courses-bottom .item {
+    width: 370px;
+    height: 466px;
+}
+
+.courses-bottom .thumb {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses-bottom .info {
+    padding: 16px 22px 22px 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.courses-bottom .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.courses-bottom .head .title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.courses-bottom .head .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--secondary-color);
+}
+
+.courses-bottom .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5F5B53;
+    margin-bottom: 12px;
+}
+
+.courses-bottom .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-bottom .foot .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+
+.courses-bottom .foot .btn {
+    font-size: 1.4rem;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+}
+
+
+/* === TESTIMONIAL === */
+.testimonial {
+    background-color: #2E2100;
+    color: #FFFFFF;
+}
+
+.testimonial .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 0;
+}
+
+.testimonial .info {
+    width: 159px;
+}
+.testimonial .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.testimonial .info .title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #F7F7F7;
+    margin-bottom: 4px;
+}
+
+.testimonial .info .desc {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #BFBCB3;
+}
+
+.testimonial .info .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.testimonial .info .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.testimonial .info .dot.active {
+    background: #FFB900;
+    cursor: default;
+}
+
+.testimonial .content {
+    width: 65.81%;
+}
+
+.testimonial .content .desc {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #FFFFFF;
+    transform: translateX(30px);
+}
 
